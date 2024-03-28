@@ -33,12 +33,12 @@ for i in X_train[0,:]:
         one_hot_temp[np.arange(m), ids] = 1
         X_train_new=np.concatenate((X_train_new,one_hot_temp),axis=1)
     else:
+        
         X_train_new= np.concatenate((X_train_new,X_train[:,index].reshape(-1,1)),axis=1)
     index+=1
         
 
-print (np.unique(X_train[:,2]))
-        
+print(X_train_new[1])
    
                
 
