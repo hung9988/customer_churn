@@ -1,0 +1,170 @@
+X_train and y_train are not changed
+Training with epoch=5000, lr=0.01, reg=0.05
+-------------------------------------------------
+
+Validation Loss: 0.3383261067453766
+Validation Accuracy: 0.8618524332810047
+Test loss:0.3372339145066834
+Test accuracy:0.8557993730407524
+-------------------------------------------------
+
+X_train and y_train are not changed
+Training with epoch=5000, lr=0.05, reg=0.05
+-------------------------------------------------
+
+Validation Loss: 0.336871152529918
+Validation Accuracy: 0.8665620094191523
+Test loss:0.33839447277479934
+Test accuracy:0.85423197492163
+-------------------------------------------------
+
+X_train and y_train are not changed
+Training with epoch=5000, lr=0.1, reg=0.05
+-------------------------------------------------
+
+Validation Loss: 0.3361715894080896
+Validation Accuracy: 0.8665620094191523
+Test loss:0.33852784922073803
+Test accuracy:0.8557993730407524
+-------------------------------------------------
+
+X_train and y_train are not changed
+Training with epoch=5000, lr=0.5, reg=0.05
+-------------------------------------------------
+
+Validation Loss: 0.33539832094831984
+Validation Accuracy: 0.8665620094191523
+Test loss:0.3388420498023665
+Test accuracy:0.8557993730407524
+-------------------------------------------------
+
+X_train and y_train are not changed
+Training with epoch=5000, lr=1, reg=0.05
+-------------------------------------------------
+
+Validation Loss: 0.33536566624066494
+Validation Accuracy: 0.8665620094191523
+Test loss:0.3388541535470051
+Test accuracy:0.8557993730407524
+-------------------------------------------------
+
+X_train and y_train are not changed
+Training with epoch=5000, lr=2, reg=0.05
+-------------------------------------------------
+
+Validation Loss: 0.33538193340397887
+Validation Accuracy: 0.8665620094191523
+Test loss:0.3388490357012407
+Test accuracy:0.8557993730407524
+-------------------------------------------------
+
+X_train and y_train are not changed
+Training with epoch=5000, lr=10, reg=0.05
+-------------------------------------------------
+
+Validation Loss: 0.39517393243422483
+Validation Accuracy: 0.8367346938775511
+Test loss:0.3703013635500946
+Test accuracy:0.8526645768025078
+-------------------------------------------------
+
+X_train and y_train are not changed
+Training with epoch=1000, lr=0.05, reg=0.05
+-------------------------------------------------
+
+Validation Loss: 0.3378465429877966
+Validation Accuracy: 0.8634222919937206
+Test loss:0.33720350748196865
+Test accuracy:0.8557993730407524
+-------------------------------------------------
+
+X_train and y_train are not changed
+Training with epoch=5000, lr=0.05, reg=0.05
+-------------------------------------------------
+
+Validation Loss: 0.3373440170564176
+Validation Accuracy: 0.8649921507064364
+Test loss:0.3383644926845731
+Test accuracy:0.85423197492163
+-------------------------------------------------
+
+X_train and y_train are not changed
+Training with epoch=10000, lr=0.05, reg=0.05
+-------------------------------------------------
+
+Validation Loss: 0.33620157309580095
+Validation Accuracy: 0.8665620094191523
+Test loss:0.33852889413949744
+Test accuracy:0.8557993730407524
+-------------------------------------------------
+
+X_train and y_train are not changed
+Training with epoch=20000, lr=0.05, reg=0.05
+-------------------------------------------------
+
+Validation Loss: 0.3356217576078363
+Validation Accuracy: 0.8665620094191523
+Test loss:0.33872564067481536
+Test accuracy:0.8557993730407524
+-------------------------------------------------
+
+X_train and y_train are not changed
+Training with epoch=5000, lr=0.05, reg=0.01
+-------------------------------------------------
+
+Validation Loss: 0.3380086672047357
+Validation Accuracy: 0.8634222919937206
+Test loss:0.33835780490272366
+Test accuracy:0.85423197492163
+-------------------------------------------------
+
+X_train and y_train are not changed
+Training with epoch=5000, lr=0.05, reg=0.1
+-------------------------------------------------
+
+Validation Loss: 0.3382479202070423
+Validation Accuracy: 0.8634222919937206
+Test loss:0.33837333514193557
+Test accuracy:0.85423197492163
+-------------------------------------------------
+
+X_train and y_train are not changed
+Training with epoch=5000, lr=0.05, reg=0.5
+-------------------------------------------------
+
+Validation Loss: 0.33734191522856705
+Validation Accuracy: 0.8634222919937206
+Test loss:0.33835238395874595
+Test accuracy:0.85423197492163
+-------------------------------------------------
+
+X_train and y_train are not changed
+Training with epoch=5000, lr=0.05, reg=1
+-------------------------------------------------
+
+Validation Loss: 0.33791576928145683
+Validation Accuracy: 0.8634222919937206
+Test loss:0.33833762249394866
+Test accuracy:0.8510971786833855
+-------------------------------------------------
+
+X_train and y_train are not changed
+Training with epoch=5000, lr=0.05, reg=2
+-------------------------------------------------
+
+Validation Loss: 0.33733370875037394
+Validation Accuracy: 0.8618524332810047
+Test loss:0.33831279126284824
+Test accuracy:0.8526645768025078
+-------------------------------------------------
+
+X_train and y_train are not changed
+Training with epoch=5000, lr=0.05, reg=10
+-------------------------------------------------
+
+Validation Loss: 0.3369602754805005
+Validation Accuracy: 0.8634222919937206
+Test loss:0.33820696784110016
+Test accuracy:0.85423197492163
+-------------------------------------------------
+
