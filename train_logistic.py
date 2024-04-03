@@ -22,14 +22,15 @@ churn = df['churn']
 
 # Drop 'churn' column
 df = df.drop('churn', axis=1)
+df.drop(['state', 'area_code', 'account_length'], axis=1, inplace=True)
 
 # Add 'churn' column back to the end of the DataFrame
 df['churn'] = churn
 features_columns = df.columns[:-1]
 
 data=np.array(df)
-features_list= [col for col in features_columns if col not in ['state', 'area_code', 'account_length']]
-X_train, y_train, X_valid, y_valid, X_test, y_test = data_process(data,0.7,0.15,0.15,features_columns,features_list)
+
+X_train, y_train, X_valid, y_valid, X_test, y_test = data_process(data,0.1,0.4,0.5,features_columns,features_columns)
 
 
 
@@ -39,9 +40,9 @@ lr_value=[0.01,0.05,0.1,0.5,1,2,10]
 reg_value=[0.01,0.05,0.1,0.5,1,2,10]
 epochs=[1000,5000,10000,20000]
 max_accuracy=0
-default_epoch=10000
-default_lr=0.1
-default_reg=0.1
+default_epoch=100
+default_lr=0.01
+default_reg=0.01
 with open('output_engineered_features.txt', 'w') as f:
     pass
 for lr in lr_value:
