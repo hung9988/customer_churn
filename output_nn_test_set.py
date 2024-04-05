@@ -22,12 +22,12 @@ df = df.drop(['total_day_charge', 'total_eve_charge', 'total_night_charge'], axi
 df = df.drop(['total_day_minutes', 'total_eve_minutes', 'total_night_minutes'], axis=1)
 
 
+# df.drop(['state','id','area_code'], axis=1, inplace=True)
 df.drop(['state','id'], axis=1, inplace=True)
-# df.drop(['state', 'area_code', 'account_length'], axis=1, inplace=True)
 
 
 
-###################
+##################
 
 ###ONE HOT ENCODING
 df = pd.get_dummies(df, columns=['area_code'])
