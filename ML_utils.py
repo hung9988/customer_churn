@@ -10,7 +10,7 @@ def data_split(data, train_ratio=0.7, val_ratio=0.15, test_ratio=0.15):
     train, val, test = np.split(data, [int(train_ratio*len(data)), int((train_ratio+val_ratio)*len(data))])
     return train, val, test
 
-def load_data(df ,exclude=[], one_hot=False, normalize_=False):
+def load_data(df ,exclude=[], one_hot=False, normalize_=False,oversample=False):
     pd.set_option('future.no_silent_downcasting', True)
     feature_to_exclude=exclude
     df.drop(feature_to_exclude, axis=1, inplace=True)
@@ -33,6 +33,8 @@ def load_data(df ,exclude=[], one_hot=False, normalize_=False):
     data=np.array(df)
     if normalize_==True:
         data[:,:-1]=normalize(data[:,:-1])
+        
+    
     data_train,data_valid,data_test=data_split(data)
     ###COVERT TO NUMPY ARRAY
     X_train=data_train[:,:-1]
@@ -52,7 +54,28 @@ def load_data(df ,exclude=[], one_hot=False, normalize_=False):
     y_train = y_train.reshape(-1,1)
     y_val = y_val.reshape(-1,1)
     y_test = y_test.reshape(-1,1)
-    return X_train, y_train, X_val, y_val, X_test, y_test
+    
+    if oversample:
+        weight_minority_class = np.sum(y_train == 0) / np.sum(y_train == 1)
+        indices_0 = np.where(y_train == 0)[0]
+        indices_1 = np.where(y_train == 1)[0]
+        indices = np.concatenate([indices_0, indices_1])
+
+        #get weights for each class
+        weights = np.empty(indices_0.shape[0] + indices_1.shape[0])
+        weights[:indices_0.shape[0]] = 1
+        weights[indices_0.shape[0]:] = weight_minority_class
+        weights = weights/np.sum(weights)
+
+        #sample new indices
+        sampled_indices = np.random.choice(indices, indices.shape[0], p=weights)
+
+        X_train_oversampled = X_train[sampled_indices]
+        y_train_oversampled = y_train[sampled_indices]
+        y_train_oversampled = y_train_oversampled.reshape(-1,1)
+        X_train = X_train_oversampled
+        y_train = y_train_oversampled
+    return X_train, y_train, X_val, y_val, X_test, y_test,df.columns
     
 
 def total_day_eve_night_grouping(df, grouping=True):
