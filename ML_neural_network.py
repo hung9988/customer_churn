@@ -38,9 +38,11 @@ def forward_propagation(X,W,b):
     
     
 
-def squared_error(y,A):
-    return np.sum((y-A)**2)/y.shape[0]
+# def squared_error(y,A):
+#     return np.sum((y-A)**2)/y.shape[0]
 
+def squared_error(y,A):
+    return -np.sum(y*np.log(A)+(1-y)*np.log(1-A))/y.shape[0]
 
 def update_parameters(W,b,dW,db,learning_rate):
     for i in range(len(W)):
