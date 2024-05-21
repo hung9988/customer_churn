@@ -2,11 +2,12 @@ import numpy as np
 def reLU(z):
     return np.maximum(0,z)
 
+def sigmoid(z):
+    return 1/(1+np.exp(-z))
+
 def reLU_derivative(z):
     return z>0
 
-def sigmoid(z):
-    return 1/(1+np.exp(-z))
 
 def sigmoid_derivative(z):
     return sigmoid(z)*(1-sigmoid(z))
