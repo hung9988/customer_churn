@@ -11,7 +11,7 @@ def data_split(data, train_ratio=0.7, val_ratio=0.15, test_ratio=0.15):
     return train, val, test
 
 def load_data(df ,exclude=[], one_hot=False, normalize_=False,oversample=False):
-    pd.set_option('future.no_silent_downcasting', True)
+    # pd.set_option('future.no_silent_downcasting', True)
     feature_to_exclude=exclude
     df.drop(feature_to_exclude, axis=1, inplace=True)
 
@@ -99,7 +99,7 @@ def total_day_eve_night_grouping(df, grouping=True):
 
 
 def load_data_test_set(df ,exclude=[], one_hot=False, normalize_=False):
-    pd.set_option('future.no_silent_downcasting', True)
+    # pd.set_option('future.no_silent_downcasting', True)
     feature_to_exclude=exclude
     df.drop(feature_to_exclude, axis=1, inplace=True)
 
